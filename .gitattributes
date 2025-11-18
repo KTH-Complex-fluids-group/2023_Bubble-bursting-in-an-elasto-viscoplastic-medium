@@ -1,0 +1,53 @@
+# Git attributes for bubble bursting simulation repository
+
+# Auto detect text files and normalize line endings to LF
+* text=auto
+
+# Source code
+*.c text diff=c
+*.h text diff=c
+*.py text diff=python
+
+# Documentation
+*.md text diff=markdown
+*.txt text
+README text
+
+# Scripts
+*.sh text eol=lf
+Makefile text
+
+# Data files - treat as binary
+*.dat binary
+*.dump binary
+*.ppm binary
+
+# Videos - treat as binary
+*.mp4 binary
+*.avi binary
+*.mov binary
+
+# Images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+
+# Archives
+*.zip binary
+*.tar binary
+*.gz binary
+
+# Jupyter notebooks - text with special diff
+*.ipynb text diff=jupyternotebook
+
+# Linguist settings for accurate language detection
+*.h linguist-language=C
+*.c linguist-language=C
+01_code/Bo0.0010.dat linguist-generated=true
+02_videos/* linguist-generated=true
+03_supplementary_plots/* linguist-generated=true
+
+# Mark large data files
+*.dat filter=lfs diff=lfs merge=lfs -text

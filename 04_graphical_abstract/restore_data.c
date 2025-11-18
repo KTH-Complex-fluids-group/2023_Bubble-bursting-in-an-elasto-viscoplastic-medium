@@ -15,7 +15,7 @@
 #define MAXlevel 9
 
 #define tsnap (0.005)
-// Error tolerancs
+// Error tolerances
 #define fErr (1e-3)                                 // error tolerance in f1 VOF
 #define KErr (1e-4)                                 // error tolerance in f2 VOF
 #define VelErr (1e-2)                               // error tolerances in velocity
